@@ -1,0 +1,113 @@
+apiVersion: v1
+entries:
+  admin-ui:
+  - apiVersion: v2
+    appVersion: v3.0.0
+    created: "2024-07-23T20:42:07.728656-04:00"
+    description: A Helm chart for the Libre admin-ui
+    digest: 22aeffd26a9b7cb3ecee59c1cdbc54d2820aa58f10cf02f068ccb7608e7b216a
+    name: admin-ui
+    type: application
+    urls:
+    - https://libremfg.github.io/rhize-helm-charts/admin-ui-0.3.6.tgz
+    version: 0.3.6
+  agent:
+  - apiVersion: v2
+    appVersion: v3.0.0
+    created: "2024-07-23T20:42:07.729377-04:00"
+    description: A Helm chart to deploy the Libre Agent service.
+    digest: 0d8b106f0d5e13a93a0ec77138891a2092c39b37f684b79569b0ec8e9649110a
+    name: agent
+    type: application
+    urls:
+    - https://libremfg.github.io/rhize-helm-charts/agent-0.3.1.tgz
+    version: 0.3.1
+  audit:
+  - apiVersion: v2
+    appVersion: 3.0.0
+    created: "2024-07-23T20:42:07.730332-04:00"
+    dependencies:
+    - condition: postgres.enabled
+      name: postgres
+      repository: ""
+    description: A Helm chart for Libre Audit
+    digest: 8291fb62c6513417ad540b7007ea9eac4e656b697b46252e32ce758d222adda7
+    name: audit
+    type: application
+    urls:
+    - https://libremfg.github.io/rhize-helm-charts/audit-0.1.5.tgz
+    version: 0.1.5
+  baas:
+  - apiVersion: v1
+    appVersion: v3.0.0
+    created: "2024-07-23T20:42:07.734129-04:00"
+    description: Dgraph is a horizontally scalable and distributed graph database,
+      providing ACID transactions, consistent replication and linearizable reads.
+    digest: e9951d4c8c3158ca8fd3be0c1b5ef97e36e44f0aa0d4a66e6bb09c9650d4495b
+    home: https://dgraph.io/
+    icon: https://dgraph.io/assets/images/logo.png
+    keywords:
+    - dgraph
+    - database
+    - Graph
+    - GraphQL
+    - nosql
+    maintainers:
+    - email: contact@dgraph.io
+      name: dgraph
+    name: baas
+    sources:
+    - https://github.com/dgraph-io/charts/
+    - https://github.com/dgraph-io/dgraph
+    urls:
+    - https://libremfg.github.io/rhize-helm-charts/baas-0.1.11.tgz
+    version: 0.1.11
+  bpmn:
+  - apiVersion: v2
+    appVersion: v3.0.0
+    created: "2024-07-23T20:42:07.734714-04:00"
+    description: A Helm chart to deploy the Libre BPMN engine.
+    digest: 12a70285687c8c3e61f54923e003f36d87b08f5ebe435fa5084d7b9f905509f3
+    name: bpmn
+    type: application
+    urls:
+    - https://libremfg.github.io/rhize-helm-charts/bpmn-0.2.18.tgz
+    version: 0.2.18
+  core:
+  - apiVersion: v2
+    appVersion: v3.0.0
+    created: "2024-07-23T20:42:07.735182-04:00"
+    description: A Helm chart to deploy Libre core.
+    digest: 301e3638264395860bf73c3075ea25b6cb4328a9ec80ed0c9f0e7a55111cd9fb
+    name: core
+    type: application
+    urls:
+    - https://libremfg.github.io/rhize-helm-charts/core-0.2.6.tgz
+    version: 0.2.6
+  keycloak-wrapper:
+  - apiVersion: v2
+    appVersion: 15.1.2
+    created: "2024-07-23T20:42:07.745698-04:00"
+    dependencies:
+    - name: keycloak
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.1.2
+    description: A Helm chart for Kubernetes
+    digest: e84ee4f207cf8d3f255e6f279b38748813737b492bec3a375aa2d717c3b84daa
+    name: keycloak-wrapper
+    type: application
+    urls:
+    - https://libremfg.github.io/rhize-helm-charts/keycloak-wrapper-15.1.2.tgz
+    version: 15.1.2
+  router:
+  - apiVersion: v2
+    appVersion: v1.15.1
+    created: "2024-07-23T20:42:07.746692-04:00"
+    description: Rust Graph Routing runtime for Apollo Federation
+    digest: 681bd2f571231812c5e410271b2394866edd08bc566f4205ef9d89f073c8799c
+    name: router
+    type: application
+    urls:
+    - https://libremfg.github.io/rhize-helm-charts/router-1.1.11.tgz
+    version: 1.1.11
+generated: "2024-07-23T20:42:07.723554-04:00"
